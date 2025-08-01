@@ -1,10 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -13,7 +11,7 @@ const Home = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
                 Vinitha Peddareddy
               </h1>
-              <p className="text-xl text-data-accent mb-6">Data Analyst</p>
+              <p className="text-data-accent mb-6 text-xl font-semibold text-slate-950 text-center">Data Analyst</p>
               <p className="text-lg text-muted-foreground max-w-2xl">
                 With over 5.3 years of IT experience, I bring a strong blend of technical expertise 
                 and agile delivery skills, specialized in Data Analytics and Business Intelligence 
@@ -21,11 +19,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <img 
-                src={profileImg} 
-                alt="Vinitha Peddareddy" 
-                className="w-64 h-64 rounded-full object-cover shadow-medium border-4 border-white"
-              />
+              <img src={profileImg} alt="Vinitha Peddareddy" className="w-64 h-64 rounded-full object-cover shadow-medium border-4 border-white" />
             </div>
           </div>
           
@@ -105,8 +99,6 @@ const Home = () => {
           </div>
         </Card>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
