@@ -52,6 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'data-primary': 'hsl(var(--data-primary))',
+				'data-secondary': 'hsl(var(--data-secondary))',
+				'data-accent': 'hsl(var(--data-accent))',
+				'data-light': 'hsl(var(--data-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
