@@ -1,73 +1,46 @@
-import { Link, useLocation } from "react-router-dom";
-import { cn } from "@/lib/utils";
+// src/components/Navigation.tsx
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const location = useLocation();
-  
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Education", path: "/education" },
-    { name: "Experience", path: "/experience" },
-    { name: "Skills", path: "/skills" },
-    { name: "Projects", path: "/projects" },
-    { name: "Certifications", path: "/certifications" },
-    { name: "Hobbies", path: "/hobbies" },
-    { name: "Contact", path: "/contact" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-soft border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <Link to="/" className="text-xl font-bold text-primary">
-              Vinitha Peddareddy
-            </Link>
-          </div>
-          
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={cn(
-                    "px-3 py-2 rounded-md text-sm font-medium transition-smooth",
-                    location.pathname === item.path
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-secondary hover:text-secondary-foreground"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-          
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="block h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+    <nav className="bg-white shadow-md px-4 py-3">
+      <div className="flex justify-between items-center">
+        <h1 className="text-xl font-bold text-blue-600">Vinitha</h1>
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          &#9776; {/* 3-line hamburger icon */}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden mt-2 flex flex-col gap-2">
+          <Link to="/" className="text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/education" className="text-blue-600" onClick={() => setIsOpen(false)}>Education</Link>
+          <Link to="/experience" className="text-blue-600" onClick={() => setIsOpen(false)}>Experience</Link>
+          <Link to="/skills" className="text-blue-600" onClick={() => setIsOpen(false)}>Skills</Link>
+          <Link to="/projects" className="text-blue-600" onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link to="/certifications" className="text-blue-600" onClick={() => setIsOpen(false)}>Certifications</Link>
+          <Link to="/hobbies" className="text-blue-600" onClick={() => setIsOpen(false)}>Hobbies</Link>
+          <Link to="/contact" className="text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
+      )}
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex gap-4 mt-2">
+        <Link to="/" className="text-blue-600">Home</Link>
+        <Link to="/education" className="text-blue-600">Education</Link>
+        <Link to="/experience" className="text-blue-600">Experience</Link>
+        <Link to="/skills" className="text-blue-600">Skills</Link>
+        <Link to="/projects" className="text-blue-600">Projects</Link>
+        <Link to="/certifications" className="text-blue-600">Certifications</Link>
+        <Link to="/hobbies" className="text-blue-600">Hobbies</Link>
+        <Link to="/contact" className="text-blue-600">Contact</Link>
       </div>
     </nav>
   );
