@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer"; // 👈 Footer import
 
 import Home from "@/pages/Home";
 import Education from "@/pages/Education";
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer /> {/* 👈 Always-visible footer with page links */}
         </Router>
       </TooltipProvider>
     </QueryClientProvider>
