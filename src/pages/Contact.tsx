@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8"> 
+        <div className="flex justify-center"> 
 		
 			<Card className="p-6 shadow-soft">
 				<h2 className="text-2xl font-semibold text-primary mb-6">Contact Information</h2>
