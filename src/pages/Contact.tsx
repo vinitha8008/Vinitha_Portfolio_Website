@@ -43,17 +43,6 @@ const Contact = () => {
 				  </div>
 				</div>
 			</Card>
-			
-			<Card className="p-6 shadow-soft">
-            <h2 className="text-2xl font-semibold text-primary mb-6">Get In Touch</h2>
-            <form className="space-y-4">
-              <Input placeholder="Your Name" />
-              <Input type="email" placeholder="Your Email" />
-              <Input placeholder="Subject" />
-              <Textarea placeholder="Your Message" rows={5} />
-              <Button className="w-full">Send Message</Button>
-            </form>
-          </Card> 
 
           
         </div>
