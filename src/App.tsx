@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/Vinitha_Portfolio_Website">>
+      <BrowserRouter basename="/Vinitha_Portfolio_Website">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
