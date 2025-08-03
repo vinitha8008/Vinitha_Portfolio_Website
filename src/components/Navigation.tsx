@@ -10,37 +10,37 @@ const Navigation = () => {
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-bold text-blue-600">Vinitha</h1>
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-3xl"
           onClick={() => setIsOpen(!isOpen)}
         >
-          &#9776; {/* 3-line hamburger icon */}
+          &#9776; {/* Hamburger icon */}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu with styled buttons */}
       {isOpen && (
-        <div className="md:hidden mt-2 flex flex-col gap-2">
-          <Link to="/" className="text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/education" className="text-blue-600" onClick={() => setIsOpen(false)}>Education</Link>
-          <Link to="/experience" className="text-blue-600" onClick={() => setIsOpen(false)}>Experience</Link>
-          <Link to="/skills" className="text-blue-600" onClick={() => setIsOpen(false)}>Skills</Link>
-          <Link to="/projects" className="text-blue-600" onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link to="/certifications" className="text-blue-600" onClick={() => setIsOpen(false)}>Certifications</Link>
-          <Link to="/hobbies" className="text-blue-600" onClick={() => setIsOpen(false)}>Hobbies</Link>
-          <Link to="/contact" className="text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+        <div className="md:hidden mt-4 flex flex-col gap-2 items-center">
+          <Link to="/" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Home</Link>
+          <Link to="/education" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Education</Link>
+          <Link to="/experience" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Experience</Link>
+          <Link to="/skills" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Skills</Link>
+          <Link to="/projects" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Projects</Link>
+          <Link to="/certifications" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Certifications</Link>
+          <Link to="/hobbies" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Hobbies</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="bg-blue-600 text-white px-4 py-2 rounded w-11/12 text-center">Contact</Link>
         </div>
       )}
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex gap-4 mt-2">
-        <Link to="/" className="text-blue-600">Home</Link>
-        <Link to="/education" className="text-blue-600">Education</Link>
-        <Link to="/experience" className="text-blue-600">Experience</Link>
-        <Link to="/skills" className="text-blue-600">Skills</Link>
-        <Link to="/projects" className="text-blue-600">Projects</Link>
-        <Link to="/certifications" className="text-blue-600">Certifications</Link>
-        <Link to="/hobbies" className="text-blue-600">Hobbies</Link>
-        <Link to="/contact" className="text-blue-600">Contact</Link>
+      {/* Desktop Menu (if you want button-style here too) */}
+      <div className="hidden md:flex gap-3 mt-2 justify-center">
+        <Link to="/" className="bg-blue-600 text-white px-4 py-2 rounded">Home</Link>
+        <Link to="/education" className="bg-blue-600 text-white px-4 py-2 rounded">Education</Link>
+        <Link to="/experience" className="bg-blue-600 text-white px-4 py-2 rounded">Experience</Link>
+        <Link to="/skills" className="bg-blue-600 text-white px-4 py-2 rounded">Skills</Link>
+        <Link to="/projects" className="bg-blue-600 text-white px-4 py-2 rounded">Projects</Link>
+        <Link to="/certifications" className="bg-blue-600 text-white px-4 py-2 rounded">Certifications</Link>
+        <Link to="/hobbies" className="bg-blue-600 text-white px-4 py-2 rounded">Hobbies</Link>
+        <Link to="/contact" className="bg-blue-600 text-white px-4 py-2 rounded">Contact</Link>
       </div>
     </nav>
   );
