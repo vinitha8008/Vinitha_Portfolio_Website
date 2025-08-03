@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/profile_raw.png";
 const Home = () => {
   return <div className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -13,7 +13,7 @@ const Home = () => {
               </h1>
               <p className="text-data-accent mb-6 text-xl font-semibold text-slate-950 text-center">Data Analyst</p>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                With over 5.3 years of IT experience, I bring a strong blend of technical expertise 
+                With over 5.4 years of IT experience, I bring a strong blend of technical expertise 
                 and agile delivery skills, specialized in Data Analytics and Business Intelligence 
                 solutions.
               </p>
@@ -48,8 +48,9 @@ const Home = () => {
               <p className="text-data-accent font-medium">Wipro Technologies</p>
               <p className="text-muted-foreground">Feb 2025 – Present</p>
               <p className="text-sm text-muted-foreground">
-                Leading data analytics initiatives and developing comprehensive Business Intelligence solutions 
-                using Power BI, SQL, and advanced analytics tools.
+              Leading data analytics initiatives and developing comprehensive Business Intelligence solutions using Power BI, SQL, and advanced analytics tools. 
+			  Strong experience in data modeling, performance tuning, and delivering actionable insights through interactive dashboards. 
+			  Proficient in integrating data from multiple sources to support strategic business decisions.
               </p>
             </div>
           </Card>
@@ -61,11 +62,11 @@ const Home = () => {
                 <h3 className="text-lg font-medium text-foreground">M.Tech Integrated Software Engineer</h3>
                 <p className="text-data-accent">Vellore Institute of Technology</p>
                 <p className="text-muted-foreground">2015 - 2020 | 88.3%</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium text-foreground">Intermediate</h3>
-                <p className="text-data-accent">NRI Junior College, Tirupati</p>
-                <p className="text-muted-foreground">2013 - 2015 | 90.9%</p>
+				<p className="text-sm text-muted-foreground">
+                The integrated M.Tech. (Software Engineering) program at VIT is a 5-year course combining B.Tech and M.Tech degrees. 
+				It aims to provide in-depth knowledge and practical skills in software engineering, preparing students for the IT industry. 
+				The program includes core foundation courses, specialized IT courses, electives, and hands-on experience through projects and internships. 
+              </p>
               </div>
             </div>
           </Card>
@@ -77,7 +78,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-data-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">5.3+</span>
+                <span className="text-2xl font-bold text-primary">5.4+</span>
               </div>
               <h3 className="font-semibold text-foreground mb-2">Years Experience</h3>
               <p className="text-sm text-muted-foreground">IT industry expertise</p>

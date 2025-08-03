@@ -65,14 +65,18 @@ const Education = () => {
         {/* Additional Academic Info */}
         <Card className="mt-8 p-6 shadow-soft">
           <h2 className="text-2xl font-semibold text-primary mb-4">Academic Achievements</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
+          <div className="grid md:grid-cols-2 gap-6">            
+			<div>
               <h3 className="font-semibold text-foreground mb-2">Technical Focus</h3>
               <p className="text-muted-foreground text-sm">Specialized in software engineering with focus on Overall Software Engineering concepts like data structures, algorithms, database management, and software development methodologies.</p>
             </div>
-            <div>
+			<div>
               <h3 className="font-semibold text-foreground mb-2">Key Subjects</h3>
               <p className="text-muted-foreground text-sm">Database Management Systems, Software Engineering, Data Structures, Web Technologies, and Business Analytics.</p>
+            </div>
+			<div>
+              <h3 className="font-semibold text-foreground mb-2">Duration</h3>
+              <p className="text-muted-foreground text-sm">5 years, integrating B.Tech and M.Tech.</p>
             </div>
           </div>
         </Card>

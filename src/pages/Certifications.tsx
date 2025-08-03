@@ -9,24 +9,25 @@ const Certifications = () => {
     {
       title: "Certified Scrum Master Certification",
       issuer: "Scrum Alliance",
-      date: "2023",
+      date: "2025",
       image: certificate1,
+      status: "Active"
+    },
+	{
+      title: "ISTQB Foundational Level Certification",
+      issuer: "International Software Testing Qualifications Board",
+      date: "2022",
+      image: certificate3,
       status: "Active"
     },
     {
       title: "Power BI Certification",
-      issuer: "Microsoft",
-      date: "2022",
+      issuer: "Simplilearn",
+      date: "2024",
       image: certificate2,
       status: "Active"
     },
-    {
-      title: "ISTQB Foundational Level Certification",
-      issuer: "International Software Testing Qualifications Board",
-      date: "2021",
-      image: certificate3,
-      status: "Active"
-    }
+    
   ];
 
   const achievements = [

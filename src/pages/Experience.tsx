@@ -35,7 +35,7 @@ const Experience = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-primary mb-4">Professional Experience</h1>
           <p className="text-lg text-muted-foreground">
-            5.3+ years of experience in IT and Data Analytics
+            5.4+ years of experience in IT and Data Analytics
           </p>
         </div>
 

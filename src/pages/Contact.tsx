@@ -15,8 +15,36 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="p-6 shadow-soft">
+        <div className="grid md:grid-cols-2 gap-8"> 
+		
+			<Card className="p-6 shadow-soft">
+				<h2 className="text-2xl font-semibold text-primary mb-6">Contact Information</h2>
+				<div className="space-y-4">
+				  <div className="flex items-center gap-4">
+					<Mail className="w-6 h-6 text-primary" />
+					<div>
+					  <p className="font-medium">Email</p>
+					  <p className="text-muted-foreground">vinipeddireddy@gmail.com</p>
+					</div>
+				  </div>
+				  <div className="flex items-center gap-4">
+					<Phone className="w-6 h-6 text-primary" />
+					<div>
+					  <p className="font-medium">Phone</p>
+					  <p className="text-muted-foreground">+91-9487904841</p>
+					</div>
+				  </div>
+				  <div className="flex items-center gap-4">
+					<MapPin className="w-6 h-6 text-primary" />
+					<div>
+					  <p className="font-medium">Location</p>
+					  <p className="text-muted-foreground">Tirupati District, Andhra Pradesh</p>
+					</div>
+				  </div>
+				</div>
+			</Card>
+			
+			<Card className="p-6 shadow-soft">
             <h2 className="text-2xl font-semibold text-primary mb-6">Get In Touch</h2>
             <form className="space-y-4">
               <Input placeholder="Your Name" />
@@ -25,34 +53,9 @@ const Contact = () => {
               <Textarea placeholder="Your Message" rows={5} />
               <Button className="w-full">Send Message</Button>
             </form>
-          </Card>
+          </Card> 
 
-          <Card className="p-6 shadow-soft">
-            <h2 className="text-2xl font-semibold text-primary mb-6">Contact Information</h2>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-primary" />
-                <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">vinipeddireddy@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-primary" />
-                <div>
-                  <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+91-9487904841</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <MapPin className="w-6 h-6 text-primary" />
-                <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">Tirupati District, Andhra Pradesh</p>
-                </div>
-              </div>
-            </div>
-          </Card>
+          
         </div>
       </div>
     </div>

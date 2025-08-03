@@ -10,19 +10,39 @@ import art7 from "@/assets/art7.jpg";
 import art8 from "@/assets/art8.jpg";
 import art9 from "@/assets/art9.jpg";
 import art10 from "@/assets/art10.jpg";
+import art11 from "@/assets/art11.jpg";
+import art12 from "@/assets/art12.jpg";
+import art13 from "@/assets/art13.jpg";
+import art14 from "@/assets/art14.jpg";
+import art15 from "@/assets/art15.jpg";
+import art16 from "@/assets/art16.jpg";
+import art17 from "@/assets/art17.jpg";
+import art18 from "@/assets/art18.jpg";
+import art19 from "@/assets/art19.jpg";
+import art20 from "@/assets/art20.jpg";
 
 const Hobbies = () => {
   const artworks = [
-    { id: 1, image: art1, title: "Mandala Design 1" },
-    { id: 2, image: art2, title: "Floral Mandala" },
-    { id: 3, image: art3, title: "Peacock Mandala" },
-    { id: 4, image: art4, title: "Lippon Art Design" },
-    { id: 5, image: art5, title: "Lotus Mandala" },
-    { id: 6, image: art6, title: "Rangoli Art" },
-    { id: 7, image: art7, title: "Zentangle Art" },
-    { id: 8, image: art8, title: "Elephant Mandala" },
-    { id: 9, image: art9, title: "Henna Style Art" },
-    { id: 10, image: art10, title: "Butterfly Mandala" }
+    { id: 1, image: art1, title: "Gomatha Lippon Art" },
+    { id: 2, image: art2, title: "Puri Jgannatha Swamy" },
+    { id: 3, image: art3, title: "Tree Lippon Art" },
+    { id: 4, image: art4, title: "Vinayaka Lippon Art" },
+    { id: 5, image: art5, title: "Evil Eye" },
+    { id: 6, image: art6, title: "Dream Cathcher" },
+    { id: 7, image: art7, title: "Peacock Lippon Art" },
+    { id: 8, image: art8, title: "Mahadeva Mandala Art" },
+    { id: 9, image: art9, title: "Jewellery Design" },
+    { id: 10, image: art10, title: "Mandala Art" },
+	{ id: 11, image: art11, title: "Mandala Art" },
+    { id: 12, image: art12, title: "Mandala Art" },
+    { id: 13, image: art13, title: "Mandala Art" },
+    { id: 14, image: art14, title: "Mandala Art" },
+    { id: 15, image: art15, title: "Jewellery Design" },
+    { id: 16, image: art16, title: "Jewellery Design" },
+    { id: 17, image: art17, title: "Jewellery Design" },
+    { id: 18, image: art18, title: "Jewellery Design" },
+    { id: 19, image: art19, title: "Jewellery Design" },
+    { id: 20, image: art20, title: "Jewellery Design" }
   ];
 
   return (
